@@ -1,5 +1,6 @@
 const express = require('express')
 const app = express()
+const mysql = require('mysql'); // подключаем библиотеку mysql
 app.all('/', (req, res) => {
 console.log("Just got a request!")
 res.send('Yo!')
